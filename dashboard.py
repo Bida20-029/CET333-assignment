@@ -1,7 +1,11 @@
 import csv
+import pandas as pd
+import os
+import streamlit as st
 import random
 from datetime import datetime, timedelta
 import geoip2.database
+import matplotlib.pyplot as plt
 
 # List of predefined pages on the website
 pages = [
