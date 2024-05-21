@@ -137,7 +137,6 @@ if fl is not None:
     st.write(filename)
     df=pd.read_csv(filename, encoding = "ISO-8859-1")
 else:
-    os.chdir(r"C:\Users\Ztash\OneDrive\Desktop\olympics")
     df = pd.read_csv("logs.csv", encoding = "ISO-8859-1")
 
 total_users = df['NumberOfUsers'].sum()
