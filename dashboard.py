@@ -91,7 +91,7 @@ with open('logs.csv', 'w', newline='') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     users = {}  # Dictionary to track users and their view counts for each category
-    for _ in range(1000):  # Generate 1000 log entries
+    for _ in range(1500):  # Generate 1000 log entries
         timestamp, date = generate_timestamp()
         ip = generate_ip()
         country = get_country(ip)
